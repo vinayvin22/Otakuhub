@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
-    "build": "npm install && cd backend && npm install && cd ../frontend && npm install && npm run build"
+    "build": "npm install && cd backend && npm install && cd ../frontend && npm install && npm run build && cd .. && (rm -rf public || true) && mv frontend/dist public"
   },
   "keywords": [],
   "author": "",
